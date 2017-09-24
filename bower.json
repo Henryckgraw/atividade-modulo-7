@@ -1,0 +1,25 @@
+{
+  "name": "atividade_modulo_7",
+  "description": "Atividade sobre flexbox",
+  "main": "index.js",
+  "authors": [
+    "Henrique Oliveira"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "flexbox",
+    "bootstrap"
+  ],
+  "homepage": "https://github.com/Henryckgraw/atividade-modulo-7",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}

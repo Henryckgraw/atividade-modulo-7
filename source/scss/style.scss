@@ -1,0 +1,81 @@
+@import "./../../bower_components/bootstrap/dist/css/bootstrap.min.css"  ;
+
+$m_width: 220px;
+$margin_l_r: 15px;
+
+%width {
+	max-width: $m_width !important; 
+	height: 250px !important;
+}
+
+%m_left {
+	margin-left: $margin_l_r;
+}
+
+%m_right {
+	margin-right: $margin_l_r;
+}
+
+.col,[class*="col-"] {
+	background-color: #f4f4f4;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 30px;
+}
+.row {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.row:nth-child(2) .col:nth-child(1){
+	@extend %m_right;
+	@extend %width;
+}
+
+.row:nth-child(2) .col:nth-child(2){
+	@extend %m_left;
+	@extend %m_right;
+	@extend %width;
+}
+
+.row:nth-child(2) .col:nth-child(3){
+	@extend %m_left;
+	@extend %width;
+} 
+
+@media (min-width: 50px) and (max-width: 780px) { 
+	$m_width: 145px;
+	$margin_l_r: 5px;
+
+	%width {
+		max-width: $m_width !important; 
+		height: 250px !important;
+		padding-left: 9px;
+	}
+
+	%m_left {
+		margin-left: $margin_l_r;
+	}
+
+	%m_right {
+		margin-right: $margin_l_r;
+	}
+}
+
+@media (min-width: 850px) { 
+	$m_width: 350px;
+	$margin_l_r: 15px;
+
+	%width {
+		max-width: $m_width !important; 
+		height: 250px !important;
+	}
+
+	%m_left {
+		margin-left: $margin_l_r;
+	}
+
+	%m_right {
+		margin-right: $margin_l_r;
+	}
+}
